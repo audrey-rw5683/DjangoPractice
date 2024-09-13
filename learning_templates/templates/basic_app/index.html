@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+    {% block body_block%}
+    <h1>Welcome to index!</h1>
+    <a href="{% url 'admin:index' %}">The admin page</a>
+    <h1>{{ text|word_length|upper}} </h1>
+    <h1>{{ number|add:'99' }}</h1>
+    
+    {% endblock %}
